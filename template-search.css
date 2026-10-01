@@ -1,0 +1,85 @@
+:root {
+  --cc-navy: #102b50;
+  --cc-blue: #0b71c7;
+  --cc-blue-dark: #075a9f;
+  --cc-muted: #61708a;
+  --cc-border: #dce4ee;
+  --cc-bg: #eef6fb;
+  --cc-soft: #f4f8fc;
+}
+
+.search-area { max-width: 1120px; position: relative; }
+.search-control {
+  min-height: 60px;
+  flex-wrap: nowrap;
+  filter: drop-shadow(0 8px 18px rgba(0, 91, 170, .14));
+}
+.search-control .input-group-text {
+  color: #8796aa;
+  background: white;
+  border: 1px solid #91b7dc;
+  border-right: 0;
+  border-radius: 11px 0 0 11px;
+  padding-left: 1.1rem;
+}
+.search-control .form-control {
+  min-height: 60px;
+  border-color: #91b7dc;
+  border-left: 0;
+  box-shadow: none;
+}
+.search-control .form-control:focus { border-color: var(--cc-blue); }
+.search-control:focus-within .input-group-text { border-color: var(--cc-blue); color: var(--cc-blue); }
+.search-control .btn { min-width: 175px; border-radius: 0 11px 11px 0; font-size: 1rem; font-weight: 750; white-space: nowrap; }
+
+.btn-primary { --bs-btn-bg: var(--cc-blue); --bs-btn-border-color: var(--cc-blue); --bs-btn-hover-bg: var(--cc-blue-dark); --bs-btn-hover-border-color: var(--cc-blue-dark); }
+
+.quick-filter {
+  padding: .55rem .85rem;
+  color: #28578c;
+  background: var(--cc-soft);
+  border: 1px solid var(--cc-border);
+  border-radius: 9px;
+  font-size: .9rem;
+  transition: .18s ease;
+}
+.quick-filter:hover, .quick-filter.active { color: #075a9f; background: #e5f2fc; border-color: #9bc5e8; transform: translateY(-1px); }
+
+.template-results {
+  width: min(650px, 100%);
+  overflow: hidden;
+  background: white;
+  border: 1px solid var(--cc-border);
+  border-radius: 12px;
+  box-shadow: 0 14px 30px rgba(16, 43, 80, .14);
+}
+.template-option {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 46px 1fr auto;
+  align-items: center;
+  gap: .85rem;
+  padding: .9rem 1rem;
+  text-align: left;
+  color: var(--cc-navy);
+  background: white;
+  border: 0;
+  border-bottom: 1px solid #e7edf4;
+}
+.template-option:last-child { border-bottom: 0; }
+.template-option:hover, .template-option.is-active { background: #f2f8fd; }
+.template-icon, .project-icon {
+  display: grid;
+  place-items: center;
+  color: #165fa9;
+  background: #edf5fc;
+  border-radius: 10px;
+}
+.template-icon { width: 46px; height: 46px; font-size: 1.25rem; }
+.template-name { display: block; font-weight: 750; }
+.template-meta { display: block; margin-top: .15rem; color: var(--cc-muted); font-size: .875rem; }
+.no-results { padding: 1.25rem; color: var(--cc-muted); }
+.no-results strong { color: var(--cc-navy); display: block; margin-bottom: .25rem; }
+
+
+.template-search-screen{padding:52px 44px 60px;background:#f8fbff}.template-section{max-width:1120px;margin:auto}.section-eyebrow{color:#0966c2;font-size:12px;font-weight:800;letter-spacing:1.2px;text-transform:uppercase}.template-section h1{font-size:clamp(28px,3.5vw,40px);font-weight:800;letter-spacing:-1px;margin:14px 0 10px;line-height:1.2}.section-help{color:#6580a4;font-size:14px;line-height:1.6}.template-hint{display:flex;align-items:center;gap:7px;color:#0966c2;font-size:13px;font-weight:700}.quick-filter{font-size:13px;padding:10px 14px}.search-control .btn{font-size:14px}.template-results{width:100%}.template-name{font-size:14px}.template-meta{font-size:12px}.scope-preview{padding:16px;background:#f4f8fc;border:1px solid #dce4ee;border-radius:10px;font-size:14px}.modal-title{font-weight:750}.modal-content{border:1px solid #dce4ee;border-radius:16px}.template-option:focus-visible,.quick-filter:focus-visible{outline:3px solid #1682b5;outline-offset:-3px}.template-option i{pointer-events:none}@media(max-width:600px){.template-search-screen{padding:34px 20px 40px}.search-control{flex-wrap:wrap;gap:10px;filter:none}.search-control .input-group-text{border-radius:10px 0 0 10px}.search-control .form-control{border-radius:0 10px 10px 0!important;width:calc(100% - 52px)}.search-control .btn{width:100%;min-height:48px;border-radius:10px!important}.template-option{grid-template-columns:36px 1fr auto;padding:12px;gap:10px}.template-icon{width:36px;height:36px}}

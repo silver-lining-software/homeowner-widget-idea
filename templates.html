@@ -1,0 +1,38 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Search HVAC project templates</title><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"><link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"><link rel="stylesheet" href="widget.css"><link rel="stylesheet" href="template-search.css"><link rel="stylesheet" href="auth.css"></head><body><main class="template-search-screen"><div class="template-section">
+          <p class="section-eyebrow mb-2">Start a new project</p>
+          <h1 id="createProjectTitle">What would you like help with?</h1>
+          <p class="section-help mb-2">Search for the HVAC service you need, and we’ll help you build your project step by step.</p>
+          <p class="template-hint mb-4"><i class="bi bi-arrow-down-circle" aria-hidden="true"></i> Start by searching or selecting a service below</p>
+
+          <div class="search-area">
+            <form id="templateSearchForm" role="search" novalidate>
+              <div class="input-group search-control">
+                <span class="input-group-text" aria-hidden="true"><i class="bi bi-search"></i></span>
+                <input
+                  id="templateSearch"
+                  class="form-control"
+                  type="search"
+                  placeholder="Search for an HVAC service…"
+                  autocomplete="off"
+                  role="combobox" aria-label="Search project templates"
+                  aria-controls="templateResults"
+                  aria-expanded="false"
+                  aria-autocomplete="list"
+                >
+                <button class="btn btn-primary px-4" type="submit">Create</button>
+              </div>
+
+              <div class="quick-filters d-flex flex-wrap gap-2 mt-3" aria-label="Popular template searches">
+                <button class="quick-filter" type="button" data-query="central HVAC"><i class="bi bi-snow"></i> Central HVAC</button>
+                <button class="quick-filter" type="button" data-query="heat pump"><i class="bi bi-fan"></i> Heat pump</button>
+                <button class="quick-filter" type="button" data-query="furnace"><i class="bi bi-fire"></i> Furnace</button>
+                <button class="quick-filter" type="button" data-query="air conditioning"><i class="bi bi-wind"></i> Air conditioning</button>
+              </div>
+
+              <div id="templateResults" class="template-results mt-3" role="listbox" aria-label="Project templates" hidden></div>
+              <div id="searchAnnouncement" class="visually-hidden" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+
+        </main><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script><script src="project-state.js"></script><script src="auth.js"></script><script src="template-search.js"></script><script src="embed.js"></script></body></html>
